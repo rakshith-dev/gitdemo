@@ -62,11 +62,7 @@ public class BaseTest {
 					"/Users/rahulshetty//documents//geckodriver");
 			driver = new FirefoxDriver();
 			// Firefox
-		} else if (browserName.equalsIgnoreCase("edge")) {
-			// Edge
-			System.setProperty("webdriver.edge.driver", "edge.exe");
-			driver = new EdgeDriver();
-		}
+		} 
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
